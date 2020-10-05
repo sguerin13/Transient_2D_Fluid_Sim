@@ -1,0 +1,19 @@
+5-13:
+ - updated the Stokes Transient Circle Script -> Renamed to Rev2
+	- Variable reynolds number target: parameters save for viscosity are fixed. Improves stability and allows for better data generation
+	- Increase sampling rate to 30 Hz -> also changed grid size to 60/120
+	- Only keeping 10 seconds worth of frames -> 300 training samples per simulation
+
+ - Updating Data Utils to add the ability to return the mask.
+	- Also added new function to only return the Velocities, Densities, Reynolds #, SDF and the Mask.
+
+ - Updating Data Prep to Use the Reynolds number scaler
+	- param vec is going to be removed
+
+
+5-15:
+- created maskedloss module
+- updated training routine
+- created simulation scripts for triangles and rectangles
+- updated trainer class
+- modifying models to taking reynolds number a input
